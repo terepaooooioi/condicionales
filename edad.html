@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function verEdad(){
+        var edad = document.getElementById("elnumero").value;
+      //  alert(edad);
+        if(edad <= 7){
+            alert("benajamin");
+        }else if(edad <=9){
+            alert("Alevin");
+        }else if(edad<=11){
+            alert("infantil");
+        }else{
+            alert("cadete");
+        }
+    }
+</script>
+<body>
+    Edad: <input type="number" id="elnumero">
+ <input type="button" value="Ver categoria" onclick="verEdad()">
+</body>
+</html>
